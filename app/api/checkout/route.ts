@@ -37,10 +37,10 @@ interface WebhookResponse {
   signature: string;
 }
 
-const allowedOrigin = process.env.ALLOWED_ORIGIN || 'http://localhost:3001' || 'https://647b-2405-4802-a099-ea20-a18d-631c-271a-7df5.ngrok-free.app';
+const allowedOrigin = process.env.ALLOWED_ORIGIN || 'http://localhost:3001' || 'https://comet-store.vercel.app/';
 
 const corsHeaders = {
-  'Access-Control-Allow-Origin': allowedOrigin || '*',
+  'Access-Control-Allow-Origin': allowedOrigin,
   'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type, Authorization',
   'Access-Control-Allow-Credentials': 'true',
