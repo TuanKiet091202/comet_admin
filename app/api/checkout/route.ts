@@ -17,7 +17,7 @@ interface CartItem {
 }
 
 const corsHeaders = {
-  'Access-Control-Allow-Origin': process.env.ECOMMERCE_STORE_URL || 'https://comet-store.vercel.app',
+  'Access-Control-Allow-Origin': 'https://comet-store.vercel.app',
   'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type, Authorization',
   'Access-Control-Allow-Credentials': 'true',
